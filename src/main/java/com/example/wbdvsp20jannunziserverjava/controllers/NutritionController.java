@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://pure-scrubland-90887.herokuapp.com")
 public class NutritionController {
     @Autowired
     UserRepository userRepository;

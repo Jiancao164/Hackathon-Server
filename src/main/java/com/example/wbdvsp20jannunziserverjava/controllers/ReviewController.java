@@ -9,7 +9,7 @@ import java.util.List;
 
 //https://powerful-thicket-77714.herokuapp.com
 @RestController
-@CrossOrigin(origins = "https://powerful-thicket-77714.herokuapp.com", allowCredentials = "true")
+@CrossOrigin(origins = "https://pure-scrubland-90887.herokuapp.com", allowCredentials = "true")
 public class ReviewController {
 
     @Autowired
