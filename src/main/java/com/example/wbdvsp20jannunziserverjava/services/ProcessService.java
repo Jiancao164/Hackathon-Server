@@ -35,7 +35,7 @@ public class ProcessService {
 
     public Step createProcess(Integer rid) {
         Step process = new Step();
-        process.setProcessDetail("new Step");
+        process.setProcessDetail("");
         Recipe recipe = recipeRepository.findRecipeById(rid);
         process.setRecipe(recipe);
         return processRepository.save(process);

@@ -34,7 +34,7 @@ public class IngredientService {
 
     public Ingredient createIngredient(Integer rid) {
         Ingredient ingredient = new Ingredient();
-        ingredient.setIngredientDetail("new ingredient");
+        ingredient.setIngredientDetail("");
         Recipe recipe = recipeRepository.findRecipeById(rid);
         ingredient.setRecipe(recipe);
         return ingredientRepository.save(ingredient);

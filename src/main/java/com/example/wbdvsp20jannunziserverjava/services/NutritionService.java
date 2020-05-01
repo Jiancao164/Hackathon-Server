@@ -35,7 +35,7 @@ public class NutritionService {
 
     public Nutrition createNutrition(Integer rid) {
         Nutrition nutrition = new Nutrition();
-        nutrition.setNutritionDetail("new Nutrition");
+        nutrition.setNutritionDetail("");
         Recipe recipe = recipeRepository.findRecipeById(rid);
         nutrition.setRecipe(recipe);
         return nutritionRepository.save(nutrition);
