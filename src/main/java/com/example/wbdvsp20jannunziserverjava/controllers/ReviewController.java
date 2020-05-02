@@ -12,6 +12,7 @@ import java.util.List;
 @CrossOrigin(origins = "https://powerful-thicket-77714.herokuapp.com", allowCredentials = "true")
 public class ReviewController {
 
+
     @Autowired
     ReviewService reviewService;
 
