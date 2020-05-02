@@ -49,6 +49,8 @@ public class RecipeService {
         recipe1.setPreTime(recipe.getPreTime());
         recipe1.setCookTime(recipe.getCookTime());
         recipe1.setServings(recipe.getServings());
+        recipe1.setUpvote(recipe.getUpvote());
+        recipe1.setDownvote(recipe.getDownvote());
         return recipeRepository.save(recipe1);
     }
 

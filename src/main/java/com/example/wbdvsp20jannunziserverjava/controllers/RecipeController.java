@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "https://pure-scrubland-90887.herokuapp.com")
+@CrossOrigin(origins = "*")
 public class RecipeController {
     @Autowired
     UserRepository userRepository;
