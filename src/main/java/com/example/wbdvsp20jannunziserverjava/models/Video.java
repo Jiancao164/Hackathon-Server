@@ -1,6 +1,7 @@
 package com.example.wbdvsp20jannunziserverjava.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.util.Set;
 
@@ -11,7 +12,8 @@ public class Video implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String title;
-
+    @Size(max = 5000)
+    @Column(length = 5000)
     private String description;
 
     public String getDescription() {

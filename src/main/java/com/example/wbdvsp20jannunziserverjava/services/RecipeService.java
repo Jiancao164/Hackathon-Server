@@ -35,6 +35,7 @@ public class RecipeService {
         recipe.setCookTime("");
         recipe.setPreTime("");
         recipe.setServings("");
+        recipe.setDescription("");
         return recipeRepository.save(recipe);
     }
 
@@ -51,6 +52,7 @@ public class RecipeService {
         recipe1.setServings(recipe.getServings());
         recipe1.setUpvote(recipe.getUpvote());
         recipe1.setDownvote(recipe.getDownvote());
+        recipe1.setDescription(recipe.getDescription());
         return recipeRepository.save(recipe1);
     }
 
